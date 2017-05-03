@@ -121,7 +121,7 @@
 			module.exports = exports = {}
 			module.context( require, exports, module )
 		}
-		return inherit( module.exports )
+		return inherit( module.exports )//用继承的形式来返回借口内容，防止被修改
 	}
 	// 默认加载入口模块
 	script.loadScript( 'js/app.js' )
